@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
 });
 
 const corsOptions = {
-    origin: 'http://example.com'
+    origin: 'http://example.com, vscode-file://vscode-app'
 }
 
 app.get('/api', cors(corsOptions), (req, res) => {
